@@ -476,6 +476,141 @@ body {
 
 
 
+/* General Mobile First Approach */
+/* Small devices (mobile) */
+@media only screen and (max-width: 600px) {
+    /* Adjust Navbar */
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-menu {
+        display: none; /* Hide the menu by default on mobile */
+    }
+
+    /* Stack banner text for better readability on smaller screens */
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Adjust input fields in search section */
+    .search-container input {
+        width: 100%;
+        margin-bottom: 10px; /* Add margin for space between inputs */
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    /* Stack feature items vertically */
+    .features {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .feature {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 1rem;
+    }
+
+    /* Stats Section */
+    .mobility-stats {
+        height: auto;
+        padding: 20px;
+    }
+
+    .stats-grid {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Offer Ride Section */
+    .offer-ride-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .offer-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust the search inputs */
+    .search-container input {
+        width: 45%;
+    }
+
+    /* Stack features for tablets */
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    /* Adjust mobility stats for tablet */
+    .stats-grid {
+        flex-wrap: wrap;
+    }
+
+    .stat-item {
+        width: 45%;
+        margin: 10px 0;
+    }
+}
+
+/* Larger devices (desktops) */
+@media only screen and (min-width: 992px) {
+    .banner-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        flex-direction: row;
+    }
+
+    .feature {
+        width: 30%;
+    }
+
+    /* Stats Section */
+    .mobility-stats {
+        padding: 50px;
+    }
+
+    .stats-grid {
+        justify-content: space-between;
+    }
+
+    .stat-item {
+        width: 30%;
+    }
+}
   
 
 
